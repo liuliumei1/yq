@@ -32,11 +32,5 @@ jobs:
 
       - name: "Get token and update"
 
-        env:
-
-          plus_token: ${{secrets.PLUS_TOKEN}}
-
-          repo_token: ${{secrets.REPO_TOKEN}}
-
 
         run:  Data_craw1.py
