@@ -6,7 +6,7 @@ on:
 
   schedule:
 
-    - cron: '* 15 * * *'
+    - cron: '* 1 * * * *'
 
   # push:
 
@@ -38,5 +38,5 @@ jobs:
 
           repo_token: ${{secrets.REPO_TOKEN}}
 
-        run: 0.0.py
+
         run:  Data_craw1.py
