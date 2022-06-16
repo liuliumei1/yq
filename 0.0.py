@@ -4,7 +4,7 @@ import re
 
 from bs4 import BeautifulSoup
 from lxml import etree
-#我是你粑粑
+#我是你
 headers = {
     'user-agent': 'http://www.sy72.com/covid19/'
 }
