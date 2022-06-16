@@ -33,4 +33,4 @@ jobs:
       - name: "Get token and update"
 
 
-        run:  Data_craw1.py
+        run: python3 Data_craw1.py
