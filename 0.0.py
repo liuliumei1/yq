@@ -4,7 +4,7 @@ import re
 
 from bs4 import BeautifulSoup
 from lxml import etree
-
+#我是你粑粑
 headers = {
     'user-agent': 'http://www.sy72.com/covid19/'
 }
@@ -24,6 +24,6 @@ json_str = re.findall(r'\[.+\]', str(text))[0]
 last_day_corona_virus = json.loads(json_str)
 print(last_day_corona_virus)
 
-with open('venv/last_day_corona_virus','w',encoding="utf-8") as fp :
+with open('./last_day_corona_virus.json','w',encoding="utf-8") as fp :
     json.dump(last_day_corona_virus,fp,ensure_ascii=False)
 
