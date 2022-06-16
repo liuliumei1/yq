@@ -31,6 +31,11 @@ jobs:
         run:  pip3 install --user requests
 
       - name: "Get token and update"
+env:
+
+          plus_token: ${{secrets.PLUS_TOKEN}}
+
+          repo_token: ${{secrets.REPO_TOKEN}}
 
 
         run: python3 Data_craw1.py
